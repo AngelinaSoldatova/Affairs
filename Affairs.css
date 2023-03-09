@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(206, 255, 227);
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .title {
+    margin: 0 10 0 0;
+    font-weight: 600;
+    font-size: 35px;
+  }
+  
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    gap: 3%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(46, 143, 78);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .task-input {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgray;
+  }
+  
+  .button:enabled:hover {
+    background-color: rgb(180, 255, 179);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(138, 209, 135);
+    border-radius: 10px;
+  }
+  
+  #clear-container {
+    display: flex;
+    align-self: flex-end;
+  }
+  
+  #clear-container:enabled {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+  }
+  
+  .warning {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  
+  .task-container {
+    width: 100%;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 152, 0.303);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+  }
+  
+  .text-checkbox-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .task-content {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+  }
+  
+  .task-content:focus {
+    outline: none;
+  }
+  
+  .strike-out {
+    text-decoration: line-through;
+    color: rgb(96, 96, 96);
+  }
+  
+  .delete-btn {
+    font-size: 40px;
+    color: brown;
+  }
+  
+  .delete-btn:hover,
+  .edit-btn:hover {
+    cursor: pointer;
+  }
+  
+  .delete-btn:active {
+    color: darkred;
+  }
+  
+  input[type="checkbox"] {
+    background-color: #ddd;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+  }

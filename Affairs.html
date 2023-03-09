@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задачи</title>
+    <link rel="stylesheet" href="Affairs.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="title">Добавьте задачу</h2>
+      <form id="form" class="form">
+        <input
+          type="text"
+          id="task-input"
+          class="task-input"
+          name="task"
+          placeholder="Что нужно сделать?"/>
+        <button id="add-task" class="button">Добавить</button>
+      </form>
+      <h2 class="title">Список задач</h2>
+      <div class="container-wrapper">
+        <div class="warning" id="warning">Нет задач</div>
+        <section class="task-container" id="task-container"></section>
+        <button id="clear-container" class="button" disabled>
+          Очистить список задач
+        </button>
+      </div>
+    </div>
+    <script src="Affairs.js"></script>
+  </body>
+</html>
